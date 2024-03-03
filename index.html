@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отслеживание транзакций</title>
+</head>
+
+<body>
+    <h1>Отслеживание транзакций</h1>
+    <p>Введите адрес кошелька для отслеживания транзакций:</p>
+    <form id="walletForm">
+        <label for="walletAddress">Адрес кошелька:</label><br>
+        <input type="text" id="walletAddress" name="walletAddress"><br><br>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <h2>Последние транзакции:</h2>
+    <ul id="transactionList"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
